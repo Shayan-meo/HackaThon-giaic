@@ -6,22 +6,25 @@ import Item3 from "../../assets/images/Choose 3.svg";
 import Item4 from "../../assets/images/Choose 4.svg";
 import Item5 from "../../assets/images/Choose 5.svg";
 import Item6 from "../../assets/images/Choose 6.svg";
-import Yellow from "../../assets/images/Yellow Box.svg";
 import HamBurger from "../../assets/images/Hamburger.svg";
 import Cookie from "../../assets/images/Cookie.svg";
 import Wine from "../../assets/images/Wine.svg";
 import Link from "next/link";
-import White from "../../assets/images/White card.svg";
 import YellowLine from "../../assets/images/yellow line.svg";
 
 const Reason = () => {
   const foodItems = [Item6, Item5, Item4, Item3, Item2, Item1];
+  const items = [
+    { name: "Fast Food", src: HamBurger },
+    { name: "Lunch", src: Cookie },
+    { name: "Dinner", src: Wine },
+  ];
 
   return (
     <div className="container my-5">
       <div className="row">
         <div className="col-md-6">
-          <div className="my-4 d-flex justify-content-around align-items-end">
+          <div className="my-4 d-flex align-items-end">
             <div>
               <Image src={foodItems[0]} alt="food Item" className="img-fluid" />
             </div>
@@ -29,24 +32,30 @@ const Reason = () => {
               <Image src={foodItems[1]} alt="food Item" className="img-fluid" />
             </div>
           </div>
-          <div className="container-fluid d-flex justify-content-center">
+          <div className="d-flex p-1">
             <div className="container">
               <Image src={foodItems[2]} alt="Food Item" className="img-fluid" />
             </div>
             <div className="container">
               <Image src={foodItems[3]} alt="Food Item" className="img-fluid" />
             </div>
-            <div className="container">
-              <Image
-                src={foodItems[4]}
-                alt="Food Item"
-                className="img-fluid mb-2"
-              />
-              <Image src={foodItems[5]} alt="Food Item" className="img-fluid" />
+            <div className="d-flex mb-3">
+              <div className="align-items-center">
+                <Image
+                  src={foodItems[4]}
+                  alt="Food Item"
+                  className="img-fluid mb-2"
+                />
+                <Image
+                  src={foodItems[5]}
+                  alt="Food Item"
+                  className="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-5 ms-2">
           <div className="container my-5 mx-1">
             <p className="primary-color fs-4 Great-Vibes">Why Choose us</p>
             <span className="fs-2 fw-bold text-white">
@@ -60,68 +69,40 @@ const Reason = () => {
               Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit
               eu velit in consequat.
             </p>
-            <div className="d-flex justify-content-start mx-4">
-              <Link
-                href="./pages/menu"
-                className="text-decoration-none text-white"
-              >
-                <div className="position-relative mx-3">
-                  <Image src={Yellow} alt="box" className="img-fluid" />
-                  <div className="position-absolute top-0 end-50">
+          </div>
+          <div className="d-flex justify-content-start mx-2">
+            {items.map((item, index) => (
+              <div key={index} className="me-4">
+                <Link
+                  href="./pages/menu"
+                  className="text-decoration-none text-white"
+                >
+                  <div className="text-center rounded p-3 yellowBg">
                     <Image
-                      src={HamBurger}
-                      alt="HamBurger"
-                      className="img-fluid mt-4 ms-4"
+                      src={item.src}
+                      alt={item.name}
+                      className="img-fluid"
                     />
                   </div>
-                  <p className="text-center">Fast Food</p>
+                  <p className="text-center">{item.name}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div className="ms-2">
+            <div
+              className="position-relative whiteBg rounded"
+              style={{ width: "16rem" }}
+            >
+              <Image src={YellowLine} alt="line" className="img-fluid" />
+              <div className="position-absolute d-flex top-0">
+                <div className="container d-flex align-items-center m-4">
+                  <span className="primary-color fw-bold me-0 fs-2">30+</span>
                 </div>
-              </Link>
-              <Link
-                href="./pages/menu"
-                className="text-decoration-none text-white"
-              >
-                <div className="position-relative mx-3">
-                  <Image src={Yellow} alt="box" className="img-fluid" />
-                  <div className="position-absolute top-0 end-50">
-                    <Image
-                      src={Cookie}
-                      alt="Cookie"
-                      className="img-fluid mt-4 ms-4"
-                    />
-                  </div>
-                  <p className="text-center">Lunch</p>
-                </div>
-              </Link>
-              <Link
-                href="./pages/menu"
-                className="text-decoration-none text-white"
-              >
-                <div className="position-relative mx-3">
-                  <Image src={Yellow} alt="box" className="img-fluid" />
-                  <div className="position-absolute top-0 end-50">
-                    <Image
-                      src={Wine}
-                      alt="Wine"
-                      className="img-fluid mt-4 ms-4"
-                    />
-                  </div>
-                  <p className="text-center">Dinner</p>
-                </div>
-              </Link>
-            </div>
-            <div className="position-relative">
-              <Image src={White} alt="card" className="img-fluid" />
-              <div className="position-absolute top-0">
-                <Image src={YellowLine} alt="line" className="img-fluid" />
-                <div className="position-absolute d-flex top-0">
-                  <div className="mx-4 my-4">
-                    <h1 className="primary-color fw-bold">30+</h1>
-                  </div>
-                  <div className="text-black mx-5 my-3">
-                    <p>Years of</p>
-                    <p className="fw-bold">Experienced</p>
-                  </div>
+                <div className="text-black my-3">
+                  <p className="fs-6">Years of</p>
+                  <span className="fw-bold fs-6">Experienced</span>
                 </div>
               </div>
             </div>

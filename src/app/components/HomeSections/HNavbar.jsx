@@ -5,9 +5,6 @@ import Link from "next/link";
 import Search from "../../assets/images/Search.svg";
 import User from "../../assets/images/User.svg";
 import Cart from "../../assets/images/Cart.svg";
-import Hero from "../../assets/images/Hero Image.svg";
-import Dark from "../../assets/images/Dark bg.svg";
-import Image from "next/image";
 import HHero from "./HHero";
 
 const HNavbar = () => {
@@ -22,80 +19,72 @@ const HNavbar = () => {
   };
 
   return (
-    <div className="container-fluid my-3">
-      <div className="position-relative">
-        <Image src={Hero} alt="Hero Image" className="img-fluid" />
-        <div className="position-absolute top-0">
-          <Image src={Dark} alt="dark-bg" className="img-fluid" />
-          <div className="container-fluid position-absolute top-0 text-white">
-            <div className="container text-center">
-              <Link className="navbar-brand text-white fw-bold fs-3" href="/">
-                <span className="primary-color">Food</span>tuck
-              </Link>
-            </div>
-            <nav className="navbar navbar-expand-lg">
-              <div className="container-fluid">
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarTogglerDemo01"
-                  aria-controls="navbarTogglerDemo01"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarTogglerDemo01"
-                >
-                  <div className="container d-flex justify-content-start align-items-center">
-                    <ul className="navbar-nav">
-                      <NavLink href="/" text="Home" />
-                      <NavLink href="/pages/menu" text={NavList.menu} />
-                      <NavLink href="/pages/blog" text={NavList.blog} />
-                      <NavLink href="/pages/pages" text={NavList.pages} />
-                      <NavLink href="/pages/about" text={NavList.about} />
-                      <NavLink href="/pages/shop" text={NavList.shop} />
-                      <NavLink href="/pages/contact" text={NavList.contact} />
-                    </ul>
-                  </div>
-                  <div className="d-flex">
-                    <form class="d-flex" role="search">
-                      <div className="position-relative">
-                        <input
-                          class="form-control bg-dark me-2 rounded-pill search-bar"
-                          type="search"
-                          placeholder="Search..."
-                          aria-label="Search"
+    <div className="container-fluid p-3">
+      <div className="container home-bg">
+        <div className="darkBg p-2">
+          <div className="container text-center">
+            <Link className="navbar-brand text-white fw-bold fs-3" href="/">
+              <span className="primary-color">Food</span>tuck
+            </Link>
+          </div>
+          <nav className="navbar navbar-expand-lg">
+            <div className="container-fluid">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div
+                className="collapse navbar-collapse"
+                id="navbarTogglerDemo01"
+              >
+                <div className="container d-flex justify-content-start align-items-center">
+                  <ul className="navbar-nav">
+                    <NavLink href="/" text="Home" />
+                    <NavLink href="/pages/menu" text={NavList.menu} />
+                    <NavLink href="/pages/blog" text={NavList.blog} />
+                    <NavLink href="/pages/pages" text={NavList.pages} />
+                    <NavLink href="/pages/about" text={NavList.about} />
+                    <NavLink href="/pages/shop" text={NavList.shop} />
+                    <NavLink href="/pages/contact" text={NavList.contact} />
+                  </ul>
+                </div>
+                <div className="d-flex">
+                  <form class="d-flex" role="search">
+                    <div className="position-relative">
+                      <input
+                        class="form-control bg-black me-2 rounded-pill search-bar"
+                        type="search"
+                        placeholder="Search..."
+                        aria-label="Search"
+                      />
+                      <div className="position-absolute top-0 start-50 ms-5 mt-1 ">
+                        <NavIcon
+                          href="/pages/menu"
+                          icon={Search}
+                          altText="Search Icon"
                         />
-                        <div className="position-absolute top-0 start-50 ms-5 mt-1 ">
-                          <NavIcon
-                            href="/pages/menu"
-                            icon={Search}
-                            altText="Search Icon"
-                          />
-                        </div>
                       </div>
-                    </form>
-                    <NavIcon
-                      href="/pages/userinput/signin"
-                      icon={User}
-                      altText="User Icon"
-                    />
-                    <NavIcon
-                      href="/pages/shop"
-                      icon={Cart}
-                      altText="Cart Icon"
-                    />
-                  </div>
+                    </div>
+                  </form>
+                  <NavIcon
+                    href="/pages/userinput/signin"
+                    icon={User}
+                    altText="User Icon"
+                  />
+                  <NavIcon href="/pages/shop" icon={Cart} altText="Cart Icon" />
                 </div>
               </div>
-            </nav>
-          </div>
+            </div>
+          </nav>
+          <HHero />
         </div>
-        <HHero />
       </div>
     </div>
   );

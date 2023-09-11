@@ -1,5 +1,6 @@
 import Footer from "@/app/components/Footer/Footer";
 import Hero from "@/app/components/Hero/Hero";
+import OurChefs from "@/app/components/HomeSections/OurChefs";
 import Navbar from "@/app/components/Navbar/Navbar";
 import React from "react";
 
@@ -8,7 +9,7 @@ const AboutPage = () => {
     <div>
       <Navbar />
       <Hero />
-      <h1 className="text-center text-success">About Page</h1>
+      <OurChefs />
       <Footer />
     </div>
   );

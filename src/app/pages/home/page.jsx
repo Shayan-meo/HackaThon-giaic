@@ -12,7 +12,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="container-fluid text-white bg-dark my-2">
+    <div className="text-white bg-black">
       <HNavbar />
       <HAbout />
       <FoodItem />

@@ -31,7 +31,7 @@ const OurChefs = () => {
       <div className="container">
         <div className="row">
           {chefsData.map((chef, index) => (
-            <div className="col-md-3" key={index}>
+            <div className="col-md-3 my-2" key={index}>
               <div className="position-relative">
                 <Image src={chef.imageSrc} alt="chef" className="img-fluid" />
                 <div className="position-absolute top-50 mt-5">

@@ -43,7 +43,7 @@ const Blog = () => {
       </div>
       <div className="row my-5 d-flex justify-content-center">
         {blogData.map((item, index) => (
-          <div className="col-sm-3" key={index}>
+          <div className="col-sm-3 my-2" key={index}>
             <div className="border">
               <div className="card-img">
                 <Image
@@ -53,8 +53,8 @@ const Blog = () => {
                 />
               </div>
               <div className="card-text px-3 py-2">
-                <span>{item.date}</span>
-                <h6>{item.title}</h6>
+                <span className="primary-color">{item.date}</span>
+                <h6 className="py-2">{item.title}</h6>
                 <div className="position-relative">
                   <div>
                     <Link
@@ -65,9 +65,9 @@ const Blog = () => {
                     </Link>
                   </div>
                   <div className="position-absolute top-0 end-0">
-                    <Image src={Thumbsup} alt="thumbsup" />
-                    <Image src={ChatDots} alt="ChatDots" />
-                    <Image src={ShareNetwork} alt="ShareNetwork" />
+                    <Image src={Thumbsup} alt="thumbsup" className="mx-1" />
+                    <Image src={ChatDots} alt="ChatDots" className="mx-1" />
+                    <Image src={ShareNetwork} alt="ShareNetwork" className="mx-1" />
                   </div>
                 </div>
               </div>

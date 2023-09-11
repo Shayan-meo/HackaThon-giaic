@@ -50,7 +50,7 @@ const HAbout = () => {
               ))}
               <button
                 type="button"
-                className="btn btn-outline rounded-pill text-white px-4 py-2"
+                className="btn btn-color rounded-pill text-white px-4 py-2"
               >
                 Read More
               </button>

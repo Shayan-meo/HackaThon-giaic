@@ -6,7 +6,6 @@ import Fork from "../../../assets/images/Fork.svg";
 import Wolf from "../../../assets/images/Wolf.svg";
 import Bistro from "../../../assets/images/Bistro.svg";
 import Bakery2 from "../../../assets/images/Bakery2.svg";
-import { images } from "../../../../../next.config";
 
 const Partners = () => {
   const Images = [

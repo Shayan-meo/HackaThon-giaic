@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
-import HeroImg from "../../assets/images/Hero- signup.svg";
-import Image from "next/image";
 import Link from "next/link";
 
 const capitalizeFirstLetter = (string) => {
@@ -24,29 +22,34 @@ const HeroClient = () => {
   }, []);
 
   return (
-    <div className="container-fluid position-relative hero">
-      <Image src={HeroImg} className="img-fluid" />
-      <div className="position-absolute top-50 start-50 translate-middle text-white">
-        <div className="container">
-          <h1>{pageTitle} Page</h1>
-          <nav
-            style={{ "--bs-breadcrumb-divider": ">" }}
-            aria-label="breadcrumb" className="d-flex justify-content-center"
-          >
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item greater-sign">
-                <Link href="/" className="text-decoration-none text-white">
-                  Home
-                </Link>
-              </li>
-              <li
-                className="breadcrumb-item active primary-color"
-                aria-current="page"
-              >
-                {pageTitle}
-              </li>
-            </ol>
-          </nav>
+    <div className="container-fluid hero">
+      <div className="container text-center text-white p-5">
+        <div className="row">
+          <div className="col-lg-12 p-5">
+            <h1 className="fs-4">{pageTitle} Page</h1>
+            <nav
+              style={{ "--bs-breadcrumb-divider": ">" }}
+              aria-label="breadcrumb"
+              className="d-flex justify-content-center"
+            >
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item greater-sign">
+                  <Link
+                    href="/"
+                    className="text-decoration-none text-white fs-6"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li
+                  className="breadcrumb-item active primary-color fs-6"
+                  aria-current="page"
+                >
+                  {pageTitle}
+                </li>
+              </ol>
+            </nav>
+          </div>
         </div>
       </div>
     </div>

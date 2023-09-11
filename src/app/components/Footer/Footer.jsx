@@ -20,7 +20,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="container-fluid bg-dark mb-0 text-white">
+    <div className="container-fluid bg-black mb-0 text-white">
       <div className="container">
         <div className="row d-flex justify-content-center">
           <SupportTextSection />
