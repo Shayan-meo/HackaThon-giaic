@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItem from "../StarterMenu/MenuItem";
-import Coffee from "../../../assets/Coffee-cup.svg";
-import Burger from "../../../assets/Cheese Burger.svg";
+import Coffee from "../../assets/Coffee-cup.svg";
+import Burger from "../../assets/Cheese Burger.svg";
 import Image from "next/image";
 
 const MainCourse = () => {

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Restaurant from "../../../assets/Restaurant.svg";
-import Bakery1 from "../../../assets/Bakery1.svg";
-import Fork from "../../../assets/Fork.svg";
-import Wolf from "../../../assets/Wolf.svg";
-import Bistro from "../../../assets/Bistro.svg";
-import Bakery2 from "../../../assets/Bakery2.svg";
+import Restaurant from "../../assets/Restaurant.svg";
+import Bakery1 from "../../assets/Bakery1.svg";
+import Fork from "../../assets/Fork.svg";
+import Wolf from "../../assets/Wolf.svg";
+import Bistro from "../../assets/Bistro.svg";
+import Bakery2 from "../../assets/Bakery2.svg";
 
 const Partners = () => {
   const Images = [

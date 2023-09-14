@@ -1,10 +1,10 @@
 import React from "react";
-import Burger from "../../assets/Burger Img.svg";
-import Pizza from "../../assets/Pizza Img.svg";
-import Shwarma from "../../assets/Shwarma Img.svg";
-import Thumbsup from "../../assets/Thumbsup.svg";
-import ChatDots from "../../assets/ChatDots.svg";
-import ShareNetwork from "../../assets/ShareNetwork.svg";
+import Burger from "../assets/Burger Img.svg";
+import Pizza from "../assets/Pizza Img.svg";
+import Shwarma from "../assets/Shwarma Img.svg";
+import Thumbsup from "../assets/Thumbsup.svg";
+import ChatDots from "../assets/ChatDots.svg";
+import ShareNetwork from "../assets/ShareNetwork.svg";
 import Image from "next/image";
 import Link from "next/link";
 

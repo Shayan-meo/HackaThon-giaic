@@ -2,9 +2,9 @@ import React from "react";
 import NavLink from "../Navbar/NavLink";
 import NavIcon from "../Navbar/NavIcon";
 import Link from "next/link";
-import Search from "../../assets/Search.svg";
-import User from "../../assets/User.svg";
-import Cart from "../../assets/Cart.svg";
+import Search from "../assets/Search.svg";
+import User from "../assets/User.svg";
+import Cart from "../assets/Cart.svg";
 import HHero from "./HHero";
 
 const HNavbar = () => {

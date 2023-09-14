@@ -1,9 +1,9 @@
 'use client'
 import React from "react";
-import User from "../../assets/User Img.svg";
-import Quotes from "../../assets/Quotes.svg";
-import Star from "../../assets/star.svg";
-import GrayStar from "../../assets/grey star.svg";
+import User from "../assets/User Img.svg";
+import Quotes from "../assets/Quotes.svg";
+import Star from "../assets/star.svg";
+import GrayStar from "../assets/grey star.svg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";

@@ -1,16 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import Item1 from "../../assets/Choose 1.svg";
-import Item2 from "../../assets/Choose 2.svg";
-import Item3 from "../../assets/Choose 3.svg";
-import Item4 from "../../assets/Choose 4.svg";
-import Item5 from "../../assets/Choose 5.svg";
-import Item6 from "../../assets/Choose 6.svg";
-import HamBurger from "../../assets/Hamburger.svg";
-import Cookie from "../../assets/Cookie.svg";
-import Wine from "../../assets/Wine.svg";
+import Item1 from "../assets/Choose 1.svg";
+import Item2 from "../assets/Choose 2.svg";
+import Item3 from "../assets/Choose 3.svg";
+import Item4 from "../assets/Choose 4.svg";
+import Item5 from "../assets/Choose 5.svg";
+import Item6 from "../assets/Choose 6.svg";
+import HamBurger from "../assets/Hamburger.svg";
+import Cookie from "../assets/Cookie.svg";
+import Wine from "../assets/Wine.svg";
 import Link from "next/link";
-import YellowLine from "../../assets/yellow line.svg";
+import YellowLine from "../assets/yellow line.svg";
 
 const Reason = () => {
   const foodItems = [Item6, Item5, Item4, Item3, Item2, Item1];

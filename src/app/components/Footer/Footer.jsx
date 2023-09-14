@@ -5,7 +5,7 @@ import SubscriptionSection from "./SubscriptionSection";
 import AboutUsSection from "./AboutUsSection";
 import LinksSection from "./LinkSection";
 import HelpSection from "./HelpSection";
-import Mayo from "../../assets/mayo sauce.svg";
+import Mayo from "../assets/mayo sauce.svg";
 import RecentPost from "./RecentPost";
 
 const Footer = () => {

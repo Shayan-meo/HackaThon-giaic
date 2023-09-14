@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import item1 from "../../assets/Food Item 1.svg";
-import item2 from "../../assets/Food Item 2.svg";
-import item3 from "../../assets/Food Item 3.svg";
-import item4 from "../../assets/Food Item 4.svg";
+import item1 from "../assets/Food Item 1.svg";
+import item2 from "../assets/Food Item 2.svg";
+import item3 from "../assets/Food Item 3.svg";
+import item4 from "../assets/Food Item 4.svg";
 import Link from "next/link";
 
 const FoodItem = () => {

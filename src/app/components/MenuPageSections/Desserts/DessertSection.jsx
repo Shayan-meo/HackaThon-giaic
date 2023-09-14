@@ -1,7 +1,7 @@
 import React from "react";
-import Coffee from "../../../assets/Coffee-cup.svg";
+import Coffee from "../../assets/Coffee-cup.svg";
 import MenuItem from "../StarterMenu/MenuItem";
-import CupCake from "../../../assets/Cup Cake.svg";
+import CupCake from "../../assets/Cup Cake.svg";
 import Image from "next/image";
 
 const DessertSection = () => {
