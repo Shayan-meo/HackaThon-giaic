@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import User from "../../assets/images/User Img.svg";
 import Quotes from "../../assets/images/Quotes.svg";
