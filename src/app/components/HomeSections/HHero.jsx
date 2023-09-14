@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Line from "../../assets/images/Line 11.svg";
-import Facebook from "../../assets/images/Facebook Icon.svg";
-import Twitter from "../../assets/images/Twitter Icon.svg";
-import Pintrest from "../../assets/images/Pinterest Icon.svg";
-import HeroImg from "../../assets/images/HeroImg.svg";
+import Line from "../../assets/Line 11.svg";
+import Facebook from "../../assets/Facebook Icon.svg";
+import Twitter from "../../assets/Twitter Icon.svg";
+import Pintrest from "../../assets/Pinterest Icon.svg";
+import HeroImg from "../../assets/HeroImg.svg";
 
 const HHero = () => {
   const imageIcon = [

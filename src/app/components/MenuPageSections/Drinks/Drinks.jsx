@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItem from "../StarterMenu/MenuItem";
-import Coffee from "../../../assets/images/Coffee-cup.svg";
-import Drinks from '../../../assets/images/Drinks.svg'
+import Coffee from "../../../assets/Coffee-cup.svg";
+import Drinks from '../../../assets/Drinks.svg'
 import Image from "next/image";
 
 const DrinksMenu = () => {

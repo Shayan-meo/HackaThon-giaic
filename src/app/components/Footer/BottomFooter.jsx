@@ -1,9 +1,9 @@
 import React from "react";
-import FacebookIcon from "../../assets/images/Facebook Icon.svg";
-import TwitterIcon from "../../assets/images/Twitter Icon.svg";
-import InstagramIcon from "../../assets/images/Instagram Icon.svg";
-import YoutubeIcon from "../../assets/images/Youtube Icon.svg";
-import PinterestIcon from "../../assets/images/Pinterest Icon.svg";
+import FacebookIcon from "../../assets/Facebook Icon.svg";
+import TwitterIcon from "../../assets/Twitter Icon.svg";
+import InstagramIcon from "../../assets/Instagram Icon.svg";
+import YoutubeIcon from "../../assets/Youtube Icon.svg";
+import PinterestIcon from "../../assets/Pinterest Icon.svg";
 import SocialIcon from "./SocialIcon";
 
 const BottomFooter = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import StarterImage from "../../../assets/images/Starter M Img.svg";
-import Coffee from "../../../assets/images/Coffee-cup.svg";
+import StarterImage from "../../../assets/Starter M Img.svg";
+import Coffee from "../../../assets/Coffee-cup.svg";
 import MenuItem from "./MenuItem";
 import Image from "next/image";
 

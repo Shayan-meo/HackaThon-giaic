@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Clock from "../../assets/images/Clockwise.svg";
+import Clock from "../../assets/Clockwise.svg";
 
 const AboutUsSection = () => {
   return (

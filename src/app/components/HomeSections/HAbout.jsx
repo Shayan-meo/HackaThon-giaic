@@ -1,8 +1,8 @@
 import React from "react";
-import check from "../../assets/images/check.svg";
-import EggDish from "../../assets/images/Egg.svg";
-import FoodDish from "../../assets/images/Food Dish.svg";
-import Sandwich from "../../assets/images/Sandwich.svg";
+import check from "../../assets/check.svg";
+import EggDish from "../../assets/Egg.svg";
+import FoodDish from "../../assets/Food Dish.svg";
+import Sandwich from "../../assets/Sandwich.svg";
 import Image from "next/image";
 
 const HAbout = () => {

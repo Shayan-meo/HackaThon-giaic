@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Cap from "../../../assets/images/Chef Cap.svg";
-import Food from "../../../assets/images/Food.svg";
-import Experience from "../../../assets/images/Experience.svg";
-import Pizza from "../../../assets/images/Pizza.svg";
+import Cap from "../../../assets/Chef Cap.svg";
+import Food from "../../../assets/Food.svg";
+import Experience from "../../../assets/Experience.svg";
+import Pizza from "../../../assets/Pizza.svg";
 
 const ExperienceSection = () => {
   const info = [

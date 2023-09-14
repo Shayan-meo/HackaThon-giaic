@@ -1,10 +1,10 @@
 import React from "react";
-import Leaf from "../../assets/images/Right bgLeaf.svg";
+import Leaf from "../../assets/Right bgLeaf.svg";
 import Image from "next/image";
-import Chef1 from "../../assets/images/Chef 1.svg";
-import Chef2 from "../../assets/images/Chef 2.svg";
-import Chef3 from "../../assets/images/Chef 3.svg";
-import Chef4 from "../../assets/images/Chef 4.svg";
+import Chef1 from "../../assets/Chef 1.svg";
+import Chef2 from "../../assets/Chef 2.svg";
+import Chef3 from "../../assets/Chef 3.svg";
+import Chef4 from "../../assets/Chef 4.svg";
 
 const OurChefs = () => {
   const chefsData = [

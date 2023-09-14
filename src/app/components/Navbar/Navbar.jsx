@@ -2,9 +2,9 @@ import Link from "next/link";
 import React from "react";
 import NavLink from "./NavLink";
 import NavIcon from "./Navicon";
-import Search from '../../assets/images/Search.svg'
-import User from '../../assets/images/User.svg'
-import Cart from '../../assets/images/Cart.svg'
+import Search from "../assets/Search.svg";
+import User from "../assets/User.svg";
+import Cart from "../assets/Cart.svg";
 
 const Navbar = () => {
   const NavList = {
