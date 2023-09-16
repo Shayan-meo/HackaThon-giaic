@@ -4,7 +4,7 @@ import NavIcon from "../Navbar/NavIcon";
 import Link from "next/link";
 import Search from "../assets/Search.svg";
 import User from "../assets/User.svg";
-import Cart from "../assets/cart.svg";
+import Cart from "../assets/Cart.svg";
 import HHero from "./HHero";
 
 const HNavbar = () => {
