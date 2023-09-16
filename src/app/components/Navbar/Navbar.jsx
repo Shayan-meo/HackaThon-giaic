@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 import NavIcon from "./NavIcon";
 import Search from "../assets/Search.svg";
 import User from "../assets/User.svg";
-import Cart from "../assets/Cart.svg";
+import Cart from "../assets/cart.svg";
 
 const Navbar = () => {
   const NavList = {
