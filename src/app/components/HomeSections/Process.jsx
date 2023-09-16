@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import play from "../assets/play.svg";
+import play from "../assets/Play.svg";
 
 const Process = () => {
   const contentData = [
