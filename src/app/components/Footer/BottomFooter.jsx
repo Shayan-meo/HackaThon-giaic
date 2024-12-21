@@ -13,7 +13,7 @@ const BottomFooter = () => {
         <div className="row">
           <div className="col-lg-6 d-flex align-items-center">
             <p className="p-2 my-2">
-              Copyright © 2022 by Ayeman. All Rights Reserved.
+              Copyright © 2022 by Shayan meo . All Rights Reserved.
             </p>
           </div>
           <div className="col-lg-6">
